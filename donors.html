@@ -12,20 +12,17 @@
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;overflow-x:hidden;}
 
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bottom:3px solid #D90B0B;display:flex;align-items:center;justify-content:space-between;padding:0.7rem 1.5rem;box-shadow:0 2px 15px rgba(0,0,0,0.08);}
 .nav-logo{display:flex;align-items:center;gap:0.7rem;text-decoration:none;}
 .nav-logo img{height:44px;width:auto;}
 .nav-logo span{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#D90B0B;line-height:1.2;}
 .hamburger{display:none;background:none;border:none;font-size:1.5rem;color:#D90B0B;cursor:pointer;padding:0.3rem;}
-.nav-links{display:flex;gap:1rem;align-items:center;list-style:none;}
-.nav-links a{text-decoration:none;color:#1a1a1a;font-weight:500;font-size:0.75rem;letter-spacing:0.04em;text-transform:uppercase;padding:0.3rem 0;}
+.nav-links{display:flex;gap:0.9rem;align-items:center;list-style:none;}
+.nav-links a{text-decoration:none;color:#1a1a1a;font-weight:500;font-size:0.72rem;letter-spacing:0.04em;text-transform:uppercase;padding:0.3rem 0;}
 .nav-links a:hover{color:#D90B0B;}
 .nav-donate-btn{background:#D90B0B!important;color:#fff!important;padding:0.45rem 1rem!important;border-radius:50px;font-weight:700!important;}
 .nav-volunteer-btn{color:#D90B0B!important;padding:0.45rem 1rem;border-radius:50px;border:2px solid #D90B0B;font-weight:700!important;}
 .nav-volunteer-btn:hover{background:#D90B0B;color:#fff!important;}
-
-/* MOBILE NAV */
 @media(max-width:900px){
   .hamburger{display:block;}
   .nav-links{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:1.5rem;border-bottom:2px solid #D90B0B;gap:0;box-shadow:0 5px 20px rgba(0,0,0,0.1);z-index:999;}
@@ -35,14 +32,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bott
   .nav-donate-btn,.nav-volunteer-btn{margin-top:0.5rem;text-align:center;display:block!important;border-radius:50px;}
 }
 
-/* BUTTONS */
 .btn-red{display:inline-block;background:#D90B0B;color:#fff!important;padding:0.85rem 1.8rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background 0.2s;}
 .btn-red:hover{background:#A80000;}
 .btn-outline{display:inline-block;background:transparent;color:#D90B0B!important;padding:0.85rem 1.8rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;border:2px solid #D90B0B;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all 0.2s;}
 .btn-outline:hover{background:#D90B0B;color:#fff!important;}
-.btn-dark{display:inline-block;background:#1a1a1a;color:#fff!important;padding:0.85rem 1.8rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;}
 
-/* SECTION HELPERS */
 .wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem;}
 .section{padding:5rem 1.5rem;}
 .section-label{color:#D90B0B;font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.7rem;}
@@ -50,17 +44,46 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bott
 .section-sub{color:#555;font-size:1rem;line-height:1.7;max-width:580px;margin-bottom:2.5rem;}
 
 /* HERO */
-.hero{min-height:100vh;background:linear-gradient(150deg,#fff 0%,#fff5f5 60%,#ffd5d5 100%);display:flex;align-items:center;padding:6rem 1.5rem 3rem;margin-top:68px;}
-.hero-inner{max-width:1100px;margin:0 auto;width:100%;}
+.hero{min-height:100vh;background:linear-gradient(150deg,#fff 0%,#fff5f5 60%,#ffd5d5 100%);padding:6rem 1.5rem 3rem;margin-top:68px;}
+.hero-inner{max-width:1100px;margin:0 auto;}
 .hero-badge{display:inline-block;background:rgba(217,11,11,0.08);color:#D90B0B;padding:0.35rem 1rem;border-radius:50px;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4rem);font-weight:900;line-height:1.1;margin-bottom:1.2rem;}
 .hero h1 span{color:#D90B0B;}
 .hero p{font-size:1.05rem;line-height:1.8;color:#444;margin-bottom:2rem;max-width:520px;}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
-.hero-logo{text-align:center;margin-top:3rem;}
-.hero-logo img{max-width:220px;filter:drop-shadow(0 15px 40px rgba(217,11,11,0.2));}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem;}
+.hero-logo{text-align:center;margin-bottom:2rem;}
+.hero-logo img{max-width:200px;filter:drop-shadow(0 15px 40px rgba(217,11,11,0.2));}
 
-/* MISSION BAND */
+/* EASTER FEATURE CARD */
+.efc{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 15px 50px rgba(217,11,11,0.15);border:1px solid rgba(217,11,11,0.1);max-width:680px;}
+.efc-header{background:linear-gradient(135deg,#D90B0B,#ff4444);padding:1.2rem 1.5rem;display:flex;align-items:center;justify-content:space-between;}
+.efc-live{display:flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,0.2);border-radius:50px;padding:0.3rem 0.8rem;}
+.efc-dot{width:8px;height:8px;background:#fff;border-radius:50%;animation:pulse 1.5s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.7);}}
+.efc-live span{color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;}
+.efc-timer{text-align:right;}
+.efc-timer-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:#fff;line-height:1;}
+.efc-timer-label{font-size:0.65rem;color:rgba(255,255,255,0.8);text-transform:uppercase;letter-spacing:0.08em;}
+.efc-body{padding:1.5rem;}
+.efc-body h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;margin-bottom:0.4rem;}
+.efc-body .efc-sub{color:#555;font-size:0.88rem;line-height:1.65;margin-bottom:1.2rem;}
+.efc-details{display:flex;gap:1.2rem;margin-bottom:1.4rem;flex-wrap:wrap;}
+.efc-detail{display:flex;align-items:center;gap:0.4rem;font-size:0.78rem;color:#444;}
+.efc-actions{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;}
+.efc-action{border-radius:12px;padding:0.75rem 0.8rem;font-size:0.78rem;font-weight:700;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:0.4rem;cursor:pointer;border:none;font-family:'DM Sans',sans-serif;transition:transform 0.2s,box-shadow 0.2s;}
+.efc-action:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.1);}
+.efc-action.primary{background:#D90B0B;color:#fff!important;grid-column:span 2;font-size:0.92rem;padding:0.9rem;}
+.efc-action.secondary{background:#fff5f5;color:#D90B0B!important;border:1.5px solid rgba(217,11,11,0.2);}
+.efc-action.ghost{background:#f5f5f5;color:#333!important;}
+.efc-footer{background:#fafafa;border-top:1px solid #eee;padding:0.9rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.efc-footer span{font-size:0.75rem;color:#888;white-space:nowrap;}
+.efc-footer strong{color:#D90B0B;}
+.efc-progress-wrap{flex:1;}
+.efc-progress-label{font-size:0.65rem;color:#999;margin-bottom:0.3rem;text-align:right;}
+.efc-progress-bar{height:6px;background:#eee;border-radius:50px;overflow:hidden;}
+.efc-progress-fill{height:100%;background:linear-gradient(90deg,#D90B0B,#ff6666);border-radius:50px;width:62%;}
+
+/* MISSION */
 .mission-band{background:#D90B0B;color:#fff;padding:2.5rem 1.5rem;text-align:center;}
 .mission-band p{font-family:'Playfair Display',serif;font-size:clamp(1rem,2.5vw,1.4rem);font-style:italic;line-height:1.7;max-width:850px;margin:0 auto;}
 
@@ -75,7 +98,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bott
 .ql-card p{font-size:0.8rem;color:#666;line-height:1.5;}
 .ql-arrow{color:#D90B0B;font-size:1rem;margin-top:0.6rem;display:block;}
 
-/* DONATE SECTION */
+/* DONATE */
 .donate-wrap{background:#1a1a1a;padding:5rem 1.5rem;}
 .donate-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
 @media(max-width:700px){.donate-inner{grid-template-columns:1fr;gap:2rem;}}
@@ -170,9 +193,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bott
 .tag-vol{background:rgba(0,100,200,0.1);color:#003f8a;}
 .tag-com{background:rgba(0,140,80,0.1);color:#005030;}
 .cal-box{background:#fff;border-radius:14px;padding:1.8rem;border:1px solid #eee;text-align:center;}
-.cal-icon{font-size:2.5rem;margin-bottom:1rem;}
-.cal-box h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.6rem;}
-.cal-box p{color:#666;font-size:0.85rem;line-height:1.6;margin-bottom:1.2rem;}
 
 /* IMPACT */
 .impact-hero{background:linear-gradient(135deg,#111 0%,#2a0000 100%);color:#fff;padding:4rem 1.5rem;text-align:center;margin-top:68px;}
@@ -209,6 +229,72 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#fff;border-bott
 .silver .chip{border-color:rgba(138,155,174,0.35);background:rgba(138,155,174,0.05);}
 .bronze .chip{border-color:rgba(184,115,51,0.3);background:rgba(184,115,51,0.05);}
 
+/* JR BOARD PAGE */
+.jb-hero{background:linear-gradient(135deg,#fff 0%,#fff5f5 60%,#ffd5d5 100%);padding:4rem 1.5rem 3rem;margin-top:68px;}
+.jb-hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+@media(max-width:700px){.jb-hero-inner{grid-template-columns:1fr;}}
+.jb-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);font-weight:900;line-height:1.15;margin-bottom:1rem;}
+.jb-hero h1 span{color:#D90B0B;}
+.jb-hero p{color:#555;font-size:1rem;line-height:1.8;margin-bottom:1.5rem;}
+.jb-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem;}
+.jb-stat{background:#fff;border-radius:12px;padding:1rem;text-align:center;border:1px solid #eee;}
+.jb-stat-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:#D90B0B;line-height:1;}
+.jb-stat-label{font-size:0.72rem;color:#666;margin-top:0.2rem;line-height:1.3;}
+.jb-visual{background:linear-gradient(135deg,#D90B0B,#ff6666);border-radius:20px;padding:2.5rem;text-align:center;color:#fff;}
+.jb-visual-icon{font-size:4rem;margin-bottom:1rem;}
+.jb-visual h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;}
+.jb-visual p{font-size:0.9rem;line-height:1.7;opacity:0.9;}
+.reasons-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.2rem;margin-bottom:2rem;}
+.reason-card{background:#fff;border-radius:14px;padding:1.8rem;border:1px solid #eee;transition:transform 0.2s,box-shadow 0.2s;}
+.reason-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.08);}
+.reason-icon{font-size:2rem;margin-bottom:0.8rem;}
+.reason-card h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;margin-bottom:0.4rem;}
+.reason-card p{color:#666;font-size:0.85rem;line-height:1.6;}
+.expect-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
+@media(max-width:600px){.expect-grid{grid-template-columns:1fr;}}
+.expect-card{background:#fff;border-radius:14px;padding:1.5rem;border:1px solid #eee;}
+.expect-card h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem;}
+.expect-list{list-style:none;}
+.expect-list li{display:flex;gap:0.6rem;margin-bottom:0.6rem;font-size:0.87rem;color:#444;align-items:flex-start;}
+.expect-list li::before{content:"✓";color:#D90B0B;font-weight:700;flex-shrink:0;}
+.scholarship-callout{background:linear-gradient(135deg,#1a1a1a,#2d0000);border-radius:16px;padding:2.5rem;color:#fff;display:flex;gap:2rem;align-items:center;}
+@media(max-width:600px){.scholarship-callout{flex-direction:column;}}
+.sc-icon{font-size:3rem;flex-shrink:0;}
+.sc-text h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;margin-bottom:0.5rem;color:#fff;}
+.sc-text p{color:rgba(255,255,255,0.75);font-size:0.9rem;line-height:1.7;}
+.apply-band{background:rgba(217,11,11,0.04);border:2px solid rgba(217,11,11,0.15);border-radius:16px;padding:2.5rem;text-align:center;}
+.apply-band h3{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;margin-bottom:0.5rem;}
+.apply-band p{color:#555;font-size:0.95rem;line-height:1.7;margin-bottom:1.5rem;max-width:500px;margin-left:auto;margin-right:auto;}
+
+/* SPONSOR PAGE */
+.sponsor-section{padding:4rem 1.5rem;}
+.sponsor-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:3rem;}
+@media(max-width:700px){.sponsor-grid{grid-template-columns:1fr;}}
+.sponsor-panel{background:#fff;border-radius:20px;padding:2rem;border:1px solid #eee;}
+.sponsor-panel.corporate{border-color:rgba(217,11,11,0.2);background:linear-gradient(135deg,#fff,#fff8f8);}
+.sponsor-panel-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1.2rem;border-bottom:2px solid #eee;}
+.sponsor-panel.corporate .sponsor-panel-header{border-color:rgba(217,11,11,0.15);}
+.sponsor-panel-icon{font-size:2.5rem;}
+.sponsor-panel h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;}
+.sponsor-panel .sp-sub{font-size:0.82rem;color:#888;margin-top:0.1rem;}
+.sp-options{list-style:none;}
+.sp-option{display:flex;align-items:center;gap:0.8rem;padding:0.8rem 0;border-bottom:1px solid #f5f5f5;text-decoration:none;color:#1a1a1a;transition:color 0.2s;}
+.sp-option:hover{color:#D90B0B;}
+.sp-option:last-child{border-bottom:none;}
+.sp-option-icon{font-size:1.3rem;flex-shrink:0;}
+.sp-option-text h4{font-size:0.9rem;font-weight:700;margin-bottom:0.1rem;}
+.sp-option-text p{font-size:0.78rem;color:#888;}
+.sp-option-arrow{margin-left:auto;color:#D90B0B;font-size:0.9rem;}
+.tiers-preview{background:#f9f9f9;border-radius:14px;padding:1.5rem;margin-bottom:2rem;}
+.tiers-preview h4{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;margin-bottom:1rem;color:#555;text-align:center;}
+.tier-row{display:flex;align-items:center;gap:1rem;padding:0.7rem 0;border-bottom:1px solid #eee;}
+.tier-row:last-child{border-bottom:none;}
+.tier-emoji{font-size:1.2rem;width:28px;text-align:center;flex-shrink:0;}
+.tier-info{flex:1;}
+.tier-info strong{font-size:0.88rem;font-weight:700;}
+.tier-info span{font-size:0.78rem;color:#888;display:block;}
+.tier-placeholder{font-size:0.72rem;color:#D90B0B;font-style:italic;margin-left:auto;white-space:nowrap;}
+
 /* FOOTER */
 footer{background:#111;color:rgba(255,255,255,0.8);padding:3rem 1.5rem 2rem;}
 .footer-inner{max-width:1100px;margin:0 auto;}
@@ -237,6 +323,7 @@ footer{background:#111;color:rgba(255,255,255,0.8);padding:3rem 1.5rem 2rem;}
     <li><a href="impact.html">Our Impact</a></li>
     <li><a href="events.html">Events</a></li>
     <li><a href="team.html">Meet the Team</a></li>
+    <li><a href="jr-board.html">Join Jr. Board</a></li>
     <li><a href="donors.html">Donors</a></li>
     <li><a href="index.html#volunteer-section" class="nav-volunteer-btn">Volunteers</a></li>
     <li><a href="index.html#donate" class="nav-donate-btn">Donate Now</a></li>
@@ -247,18 +334,16 @@ footer{background:#111;color:rgba(255,255,255,0.8);padding:3rem 1.5rem 2rem;}
   <h1>Thank You to Our <span>Donors</span></h1>
   <p>None of our work would be possible without the generosity of our incredible supporters. Every contribution directly changes lives.</p>
 </div>
-<div class="section">
-  <div class="wrap">
-    <div class="gold"><div class="tier-header"><div class="tier-badge">🏆 Champion — $1,000+</div><div class="tier-line"></div></div><div class="chips"><div class="chip">Salerno Duane Genesis of Denville</div><div class="chip">The Abhay S. Mainkar Foundation</div><div class="chip">Your Name Here ✨</div></div></div>
-    <div class="silver"><div class="tier-header"><div class="tier-badge">🥈 Supporter — $500–$999</div><div class="tier-line"></div></div><div class="chips"><div class="chip">Paint 'n Place Denville</div><div class="chip">Your Name Here ✨</div></div></div>
-    <div class="bronze"><div class="tier-header"><div class="tier-badge">🥉 Partner — $100–$499</div><div class="tier-line"></div></div><div class="chips"><div class="chip">Community Donor</div><div class="chip">Anonymous Friend</div><div class="chip">Your Name Here ✨</div></div></div>
-    <div class="friend"><div class="tier-header"><div class="tier-badge">♥ Friend of Hope — Up to $99</div><div class="tier-line"></div></div><div class="chips"><div class="chip">The NJ Community</div><div class="chip">Generous Hearts Everywhere</div><div class="chip">You? Donate Today ♥</div></div></div>
-    <div style="text-align:center;padding:2rem;background:#fff;border-radius:14px;border:1px solid #eee;">
-      <p style="color:#555;font-size:0.95rem;margin-bottom:1rem;">Want to be recognized as a sponsor or donor? Make your gift today!</p>
-      <a href="index.html#donate" class="btn-red">Become a Sponsor →</a>
-    </div>
+<div class="section"><div class="wrap">
+  <div class="gold"><div class="tier-header"><div class="tier-badge">🏆 Champion — $1,000+</div><div class="tier-line"></div></div><div class="chips"><div class="chip">Salerno Duane Genesis of Denville</div><div class="chip">The Abhay S. Mainkar Foundation</div><div class="chip">Your Name Here ✨</div></div></div>
+  <div class="silver"><div class="tier-header"><div class="tier-badge">🥈 Supporter — $500–$999</div><div class="tier-line"></div></div><div class="chips"><div class="chip">Paint 'n Place Denville</div><div class="chip">Your Name Here ✨</div></div></div>
+  <div class="bronze"><div class="tier-header"><div class="tier-badge">🥉 Partner — $100–$499</div><div class="tier-line"></div></div><div class="chips"><div class="chip">Community Donor</div><div class="chip">Anonymous Friend</div><div class="chip">Your Name Here ✨</div></div></div>
+  <div class="friend"><div class="tier-header"><div class="tier-badge">♥ Friend of Hope — Up to $99</div><div class="tier-line"></div></div><div class="chips"><div class="chip">The NJ Community</div><div class="chip">Generous Hearts Everywhere</div><div class="chip">You? Donate Today ♥</div></div></div>
+  <div style="text-align:center;padding:2rem;background:#fff;border-radius:14px;border:1px solid #eee;">
+    <p style="color:#555;font-size:0.95rem;margin-bottom:1rem;">Want to be recognized as a sponsor or donor?</p>
+    <a href="sponsor.html" class="btn-red">Become a Sponsor →</a>
   </div>
-</div>
+</div></div>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -278,7 +363,9 @@ footer{background:#111;color:rgba(255,255,255,0.8);padding:3rem 1.5rem 2rem;}
         <a href="impact.html">Who We Help</a>
         <a href="events.html">Events</a>
         <a href="team.html">Meet the Team</a>
+        <a href="jr-board.html">Join Jr. Board</a>
         <a href="donors.html">Donors</a>
+        <a href="sponsor.html">Become a Sponsor</a>
         <a href="index.html#donate">Donate</a>
         <a href="index.html#volunteer-section">Volunteer Portal</a>
       </div>
@@ -299,16 +386,4 @@ footer{background:#111;color:rgba(255,255,255,0.8);padding:3rem 1.5rem 2rem;}
       <span>Made with &hearts; for New Jersey</span>
     </div>
   </div>
-</footer><script>
-function toggleMenu(){
-  var n=document.getElementById('nav-links');
-  n.classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  var nav=document.getElementById('nav-links');
-  if(nav && nav.classList.contains('open') && !e.target.closest('nav')){
-    nav.classList.remove('open');
-  }
-});
-</script>
-</body></html>
+</footer><script>function toggleMenu(){document.getElementById("nav-links").classList.toggle("open");}document.addEventListener("click",function(e){var n=document.getElementById("nav-links");if(n&&n.classList.contains("open")&&!e.target.closest("nav"))n.classList.remove("open");});</script></body></html>
